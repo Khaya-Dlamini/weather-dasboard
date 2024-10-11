@@ -3,7 +3,7 @@ import SearchBar from '../common/SearchBar'
 import WeatherData from '../common/WeatherData'
 function WeatherCard() {
   return (
-    <div className='containerss'>
+    <div className='container'>
     <div className='weather-app'>
         <SearchBar/>
         <WeatherData/>
