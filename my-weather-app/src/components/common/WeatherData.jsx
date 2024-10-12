@@ -4,7 +4,7 @@ function WeatherData() {
   return (
     <div className="weather">
         <i class="bi bi-brightness-high-fill"></i>
-        <div className="weather type">Clear</div>
+        <div className="weather-type">Clear</div>
         <div className="temp">28˚</div>
         <div className="weather-date">
             <p>Fri,3 May</p>
