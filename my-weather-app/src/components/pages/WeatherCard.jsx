@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import SearchBar from '../common/SearchBar'
 import WeatherData from '../common/WeatherData'
 import axios from 'axios';
+import { useEffect } from 'react';
 function WeatherCard() {
     const [weatherData, setWeatherData] = useState(null);
     const [error, setError] = useState(null);
@@ -20,6 +21,9 @@ function WeatherCard() {
         setWeatherData(null);
       }
     };
+    useEffect(() => {
+      fetchWeatherData('Johannesburg'); // Default location
+    }, []);
   
   return (
     <div className='container'>
