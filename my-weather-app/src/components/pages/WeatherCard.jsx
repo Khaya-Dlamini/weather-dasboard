@@ -3,6 +3,7 @@ import SearchBar from '../common/SearchBar'
 import WeatherData from '../common/WeatherData'
 import axios from 'axios';
 import { useEffect } from 'react';
+import ErrorMessage from '../common/ErrorMessage';
 function WeatherCard() {
     const [weatherData, setWeatherData] = useState(null);
     const [error, setError] = useState(null);
@@ -27,9 +28,12 @@ function WeatherCard() {
   
   return (
     <div className='container'>
+      <div className="welcome-message">
+        <h1>Welcome to Lihle Weather</h1>
+      </div>
     <div className='weather-app'>
         <SearchBar fetchWeatherData={fetchWeatherData}></SearchBar>
-        {error && <div className="error">{error}</div>}
+        {error && <ErrorMessage message={error} />}
         {weatherData && <WeatherData weatherData={weatherData} />}
     </div>
         </div>  )
