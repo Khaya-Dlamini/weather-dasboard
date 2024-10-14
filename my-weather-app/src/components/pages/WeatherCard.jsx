@@ -29,7 +29,7 @@ function WeatherCard() {
   return (
     <div className='container'>
       <div className="welcome-message">
-        <h1>Welcome to Lihle Weather</h1>
+        <h1> Lihle Weather</h1>
       </div>
     <div className='weather-app'>
         <SearchBar fetchWeatherData={fetchWeatherData}></SearchBar>

@@ -175,7 +175,6 @@
   }
   
   
-  /* Optional: You can add responsive styles to adjust the layout on smaller screens */
   @media (max-width: 768px) {
     .welcome-message h1 {
       font-size: 1rem;
