@@ -8,7 +8,7 @@ function WeatherCard() {
     const [weatherData, setWeatherData] = useState(null);
     const [error, setError] = useState(null);
   
-    const apiKey = '6625909a59ad34b2eb0c0d430d9de0fa'; 
+    const apiKey = import.meta.env.VITE_OPENWEATHER_API_KEY;
   
     const fetchWeatherData = async (location) => {
       try {
