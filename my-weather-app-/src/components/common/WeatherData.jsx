@@ -31,7 +31,6 @@ import React from 'react'
   const description = weather[0].main;
   const iconClass = getWeatherIcon(description);
 
-//   const backgroundStyle = getBackgroundStyle(description);
       
         const date = new Date(dt * 1000).toLocaleDateString('en-US', {
           weekday: 'short',
